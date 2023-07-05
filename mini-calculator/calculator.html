@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script>
+        let calculation = "";
+    </script>
+</head>
+<body>
+    <div>
+        <button onclick="
+        calculation += 1;
+        console.log(' 1 ')">1</button>
+    <button onclick="
+    calculation += 2;
+    console.log(' 2 ')">2</button>
+    <button onclick="
+    calculation += 3
+    console.log(' 3 ')">3</button>
+    <button onclick="
+    calculation += '+';
+    console.log(' + ')">+</button>
+    <button onclick="
+    calculation = eval(calculation)
+    console.log(calculation)">=</button>
+    </div>
+
+
+    <div>
+        <button onclick="
+        calculation += 4;
+        console.log(' 4 ')">4</button>
+        <button onclick="
+        calculation += 5;
+        console.log(' 5 ')">5</button>
+        <button onclick="
+        calculation += 6;
+        console.log(' 6 ')">6</button>
+    </div>
+
+    <div>
+        <button onclick="
+        calculation += 7;
+        console.log(' 7 ')">7</button>
+        <button onclick="
+        calculation += 8;
+        console.log(' 8 ')">8</button>
+        <button onclick="
+        calculation += 9;
+        console.log(' 9 ')">9</button>
+    </div>
+
+
+
+</body>
+</html>

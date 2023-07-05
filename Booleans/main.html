@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booleans</title>
+    <script>
+        let winCounter = 0;
+        let loseCounter = 0;
+    </script>
+</head>
+<body>
+    <button onclick="
+        let computerMove = Math.floor(Math.random() * 3);
+        let result;
+
+        if(computerMove == 0) {
+            computerMove = 'Rock';
+            result = 'Tie';
+        } else if(computerMove == 1) {
+            computerMove = 'Paper';
+            loseCounter++;
+            result = 'You lose.';
+        } else {
+            computerMove = 'Scissors';
+            result = 'You win.';
+            winCounter++;
+        }
+        
+        alert(`You picked rock. Computer picked ${computerMove}. ${result}`);
+
+        
+        ">Rock</button>
+
+
+    <button onclick="
+     computerMove = Math.floor(Math.random() * 3);
+     
+
+
+    if(computerMove == 0) {
+        computerMove = 'Rock';
+        result = 'You win.';
+        winCounter++;
+    } else if(computerMove == 1) {
+        computerMove = 'Paper';
+        result = 'Tie.';
+    } else {
+        computerMove = 'Scissors';
+        result = 'You lose.';
+        loseCounter++;
+    }
+    
+    alert(`You picked paper. Computer picked ${computerMove}. ${result}`);
+
+    
+    ">Paper</button>
+
+
+    <button onclick="
+     computerMove = Math.floor(Math.random() * 3);
+     
+
+
+    if(computerMove == 0) {
+        computerMove = 'Rock';
+        result = 'You lose.';
+    } else if(computerMove == 1) {
+        computerMove = 'Paper';
+        result = 'You win.';
+        winCounter++;
+    } else {
+        computerMove = 'Scissors';
+        result = 'You lose.';
+        loseCounter++;
+    }
+    
+    alert(`You picked scissors. Computer picked ${computerMove}. ${result}`);
+
+    
+    ">Scissors</button>
+
+    <button onclick="
+        alert(`You won ${winCounter} times and lost ${loseCounter} times...`)
+    ">Show Score...</button>
+</body>
+</html> 
